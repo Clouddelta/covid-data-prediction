@@ -8,7 +8,7 @@ Run this app by calling shiny::runGitHub('covid-data-prediction','Clouddelta',re
 It takes some time to run because of loading csv file remotely.
 
 
-## Problem fixed:
+## Problem Fixed:
 ```{r}
 read.csv(url("https://covid19.who.int/WHO-COVID-19-global-data.csv"))  #working
 ```
