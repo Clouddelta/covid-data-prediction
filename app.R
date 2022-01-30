@@ -1,9 +1,24 @@
-library(dplyr)
-library(shiny)
-library(ggplot2)
-library(TSA)
-library(tseries)
-library(tidyr)
+if(!require('dplyr')){
+  install.packages('dplyr')
+  stopifnot(require('dplyr'))
+}
+if(!require('shiny')){
+  install.packages('shiny')
+  stopifnot(require('shiny'))
+}if(!require('ggplot2')){
+  install.packages('ggplot2')
+  stopifnot(require('ggplot2'))
+}if(!require('TSA')){
+  install.packages('TSA')
+  stopifnot(require('TSA'))
+}if(!require('tseries')){
+  install.packages('tseries')
+  stopifnot(require('tseries'))
+}if(!require('tidyr')){
+  install.packages('tidyr')
+  stopifnot(require('tidyr'))
+}
+
 covid_data=read.csv(url("https://covid19.who.int/WHO-COVID-19-global-data.csv"))
 names(covid_data)[1]='Date'
 canada_covid=covid_data%>%filter(Date>='2020-12-29'&Country=='Canada')
