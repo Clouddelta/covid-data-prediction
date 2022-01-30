@@ -3,7 +3,8 @@
 
 This is a very simple shiny app for project, stat433.
 
-Run this app by calling <code>shiny::runGitHub('covid-data-prediction','Clouddelta',ref='main')<code/>
+Run this app by calling <code>shiny::runGitHub('covid-data-prediction','Clouddelta',ref='main')<code/>.
+
 
 It takes some time to run because of loading csv file remotely.
 
